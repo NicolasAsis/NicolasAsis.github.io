@@ -1,0 +1,750 @@
+/* TABLE OF CONTENTS 
+ 1) GENERAL
+ 2) BANNERS
+ 3) LOADING PAGE
+ 4) CATEGORY PAGE
+ 5) CUT TYPE PAGE
+ 6) FOOD OVERVIEW PAGE
+ 7) TUTORIAL PAGE
+*/
+
+/* ------ GENERAL ------ */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {margin:0;
+     padding:0;}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gradientBG {
+    background : -moz-linear-gradient(50% 106.15% 90deg,rgba(204, 33, 90, 1) 0%,rgba(239, 91, 46, 1) 100%);
+    background : -webkit-linear-gradient(90deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+    background : -webkit-gradient(linear,50% 106.15% ,50% 6.97% ,color-stop(0,rgba(204, 33, 90, 1) ),color-stop(1,rgba(239, 91, 46, 1) ));
+    background : -o-linear-gradient(90deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+    background : -ms-linear-gradient(90deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC215A', endColorstr='#EF5B2E' ,GradientType=0)";
+    background : linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF5B2E',endColorstr='#CC215A' , GradientType=0);
+}
+
+.gradientBut
+{
+  background : -moz-linear-gradient(21.71% 50% 0deg,rgba(204, 33, 90, 1) 0%,rgba(239, 91, 46, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  background : -webkit-gradient(linear,21.71% 50% ,121.71% 50% ,color-stop(0,rgba(204, 33, 90, 1) ),color-stop(1,rgba(239, 91, 46, 1) ));
+  background : -o-linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC215A', endColorstr='#EF5B2E' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  border-radius : 14px;
+  -moz-border-radius : 14px;
+  -webkit-border-radius : 14px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC215A',endColorstr='#EF5B2E' , GradientType=1);
+}
+
+.gradientHeader {
+  background : -moz-linear-gradient(0% 50% 0deg,rgba(204, 33, 90, 1) 0%,rgba(239, 91, 46, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(204, 33, 90, 1) ),color-stop(1,rgba(239, 91, 46, 1) ));
+  background : -o-linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC215A', endColorstr='#EF5B2E' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(204, 33, 90, 1) 0%, rgba(239, 91, 46, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC215A',endColorstr='#EF5B2E' , GradientType=1);
+}
+
+
+a {
+    text-decoration:none;
+}
+
+/* ------ BANNERS ------ */
+
+.pageS {    
+            overflow:hidden;
+            width:375px;
+            height:667px;
+            position:relative;
+            left:0;
+            top:0;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+}
+
+#nobackbut {
+    display:none;
+}
+
+.bannerLogo {
+            width:41px;
+            height:41px;
+            padding-top:27px;
+            z-index:100;
+}
+
+
+/* -----*/
+/* -- HAMBURGER MENU --*/
+
+.hambut {
+    margin-top:20px;
+    z-index:200;
+    display:flex;
+    width:30%;
+    height:100%;
+    float:right;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in-out;
+} 
+
+#dropdown {
+    width:15px;
+    margin-right:10pt;
+}
+
+.dropbox {
+    transition: all 100ms ease-in-out;
+    opacity:0;
+    color:grey !important;
+    padding:20px;
+    margin-right:0px;
+}
+
+.dropboxShow {
+    opacity:1;
+}
+
+.dropbox a {
+    text-decoration:none;
+    color:white;
+    cursor:pointer;
+}
+
+.item a:active {
+    color:black;
+}
+
+.item a:hover {
+    color:black;
+}
+
+.dropboxShow {
+    opacity:1;
+}
+
+#fruits:hover {
+    color:black;
+}
+
+#dropdown:hover {
+    color:black;
+}
+
+
+
+#knife1 {
+        transition: all 200ms ease-in-out;
+}
+
+#knife3 {
+         transition: all 200ms ease-in-out;
+}
+
+#knife2 {
+        transition: all 200ms ease-in-out;
+}
+
+
+.knifemove1{
+          top:10px;
+          transform: rotate(30deg);
+}
+
+.knifemove2 {
+          opacity:0;
+}
+
+.knifemove3 {
+      top:-10px;
+      transform: rotate(-30deg);
+}
+
+.KnifeSvg {
+    position: absolute;
+    width:60%;
+}
+
+
+#logo {
+    width:100%;
+    flex:1;
+    display:none;
+    justify-content: center;
+}
+
+.logoicon {
+    margin-top:40px;
+    width:30%;
+}
+
+#menulist {
+    background-color:white;
+    width:100%;
+    flex:4;
+    text-decoration: none;
+    top:20px;
+    border-radius:40px;
+    text-align: right;
+    padding-right:4rem;
+    padding-top:5rem;
+}
+
+.dropdown a {
+    font-weight:bolder;
+    padding:10px;
+    text-decoration: none;
+    color:white;
+}
+
+.dropdown a:active {
+    color:white;
+}
+
+.item {
+    flex:1;
+    padding:4%;
+    transition:opacity 2s ease;
+    color:white;
+    font-weight:bolder;
+}
+
+.item a {
+    text-decoration: none;
+    color:white;
+    font-weight:bolder;
+}
+
+/* --           END            --*/
+
+
+
+
+
+
+/* Bottom Banner Footer */
+.backButtons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:18%;
+    padding:10px;
+    cursor:pointer;
+    margin-top:30px;
+    margin-left:20px;
+}
+
+.hamicon {
+    width:40%;
+}
+
+.backButDiv {
+    flex:1;
+}
+
+
+.topBanner {
+/*          border: 2px solid black;   */
+            width:100%;
+            height:10%;
+            top:0;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+}
+
+.botBanner {
+            width:100%;
+            height:70px;
+            bottom:0;
+            position:absolute;
+            justify-content: center;
+            align-items:center;
+}
+
+.menuBG {
+    margin:0px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    transition:all 100ms ease;
+    margin-left:800px;
+}
+
+.menushow {
+    display:block;
+}
+
+.pageS > #menu {
+    display:block;
+    justify-content:left;
+}
+
+.menu {
+    border-radius:3000;
+    width:60%;
+    float:right;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    height:100%;
+    box-shadow:0 4px 6px 0px #3c3c3c;
+    transition:all 100ms ease !important;
+}
+
+.move {
+     transition:all ease 200ms ;
+     margin-left:0px;
+}
+
+#fruits {
+    cursor:pointer;
+}
+
+
+
+
+/* ------ LOADING PAGE ------ */
+#loadingP {
+            justify-content:center;
+}
+
+#loadingLogo {
+            top:12rem;
+            width:80px;
+            height:90px;
+            justify-content: center;
+}
+
+#startDiv {
+        width:70%;
+        height:5%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+}
+
+#startBut {
+        color: lightgray;
+        width:200px;
+        position:relative;
+        border-radius:5px;
+        background-color:white;
+        font-family:'Montserrat', sans-serif;
+        padding:10px;
+        font-size:1em;
+        margin-top: 15rem;
+        cursor:pointer;
+} 
+
+
+#startAnchor {
+        display:block;
+        width:200px;
+        height:45px;
+}
+
+/* ------ CATEGORY PAGE ------ */
+.catHeader {
+        margin-top:1em;
+        margin-bottom:3em;
+}
+
+.wrapper {
+    width:70%;
+    height:70%; 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+}
+
+.fruitBut {
+    justify-self: center;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #eae9e8;
+    border-radius: 25px;
+    box-shadow:0 4px 2px -2px #d3d3d3;
+    cursor:pointer;
+    padding:6px;
+}
+
+.svgicon {
+    width:95%;
+    height:95%;
+}
+
+
+.catButs {
+        display:flex;
+        left:-500px; 
+        width:75%;
+        height:15%;
+        margin-top:30px;
+        border-radius:25px;
+        cursor:pointer;
+        color:#3d3d3d;
+        justify-content:center;
+        align-items:center;
+        flex-direction: row;
+        background-color: #eae9e8; 
+
+}
+
+.icon {
+    border-radius:15px;
+    flex:1;
+    width:25%;
+    height:80%;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+.text {
+    font-size:1rem;
+    margin-right:20px;
+    flex:2;
+}
+
+#cutOneB:hover, #cutTwoB:hover {
+    background-color:#c1c0bf;
+}
+
+
+.iconSizeIncrease {
+    width:100%;
+    padding-left:20px;
+}
+
+
+/* -- COPY THIS --*/
+/* ------ OVERVIEW PAGE ------ */
+
+.foodDisplay {
+        width:60%;
+        height:30%;
+}
+
+#OverviewIcon{
+      width:200px;
+      height:150px;
+}
+
+
+.svg {
+        width:50%;
+        margin-top:1rem;
+}
+
+.tools {
+        width:50%;
+        height:10%;
+}
+
+
+.costomCheckBox {
+        background-color: red;
+}
+
+form {
+       display:flex;
+       flex-direction:column;
+       align-content:center;
+}
+
+.list {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.checkitm {
+    float:left;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+
+.checkbox {
+    flex:1;
+}
+
+.itm {
+    flex:3;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+  transform : scale(1);
+    margin-right:1.2rem;
+    color:red;
+}
+
+input[type=checkbox]:not(old):checked + label{
+  background-position : 0 -24px;
+}
+
+input[type="checkbox"]:checked+label { font-weight: bold; }
+
+.time {
+    margin-top:4rem;
+    width:50%;
+    height:5%;
+}
+
+.time, .tools {
+    font-size:10pt;
+}
+
+.startBut {
+    margin-top:30px;
+    line-height:3rem;
+    width:40%;
+    height:8%;
+    border-radius:200px;
+    font-family:'Montserrat', sans-serif;
+    color:white;
+    cursor:pointer;
+}
+
+.title { 
+    margin-right:1.5rem;
+    font-weight:bold;
+    font-size:12pt;
+    color:#3D3D3D;
+    
+}
+
+
+.MangoAlert {
+    width:60%;
+    height:150px;
+    z-index:99;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 4px 2px -2px #d3d3d3;
+    text-align:center;
+    display:none;
+    position:absolute;
+    margin-top:200px;
+    background-color:#3d3d3d;
+    border-radius:20px;
+    font-size:0.8rem;
+    padding:2rem;
+}
+
+.closebut {
+    color:white;
+    font-size:20pt;
+    display:inline-block;
+    float:right;
+    position: absolute;
+    right:2rem;
+    cursor:pointer;
+}
+
+.holdOn{
+    width:20%;
+    height:70px;
+}
+
+
+#mAlertTop {
+    flex:1;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#3d3d3d;
+    margin-top:0px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/*
+.BlurPage {
+    filter: blur(2px);
+}
+*/
+
+input[type="checkbox"]{
+  width: 30px; /*Desired width*/
+  height: 30px; /*Desired height*/
+  cursor: pointer;
+}
+
+
+
+label {
+    flex:1;
+    text-align:left;
+}
+
+#mAlertBot {
+    flex:1;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#3d3d3d;
+    margin-top:20px;
+}
+
+
+/* -- END --*/
+
+
+/* ------ TUTORIAL PAGE ------ */
+
+#tutStepsDiv {
+    width:100%;
+    height:25%;
+    display:flex;
+    flex-direction:row;
+}
+
+.animation {
+    height:100%;
+    width:100%;
+    position:relative;
+    top:0px;
+    overflow:hidden;
+}
+
+.tutButs {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#leftBut, #rightBut {
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+
+#leftBut {
+    display:none;
+}
+
+#tutAnim {
+    flex:3;
+}
+
+#tutCircleDiv {
+    width:100%;
+    height:15px;
+    margin-top:25px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.tutCircles {
+    width:15px;
+    height:15px;
+    margin:3px;
+    border-radius:50%;
+    background-color:#afafaf;
+    transition: background-color ease-in 0.25s;
+}
+
+#tutCircOne {
+    background-color:#ef5b2e;
+    margin-right:5px;
+}
+
+/*
+#tutCircTwo, #tutCircThree, #tutCircFour {
+    background-color:#afafaf;
+    margin-right:5px;
+}
+*/
+
+#descDiv {
+    padding:10%;
+    width:70%;
+    height:18%;
+    margin-top:0px;
+    border-radius:8%;
+    color:black;
+    text-align:center;
+    padding-top:20px;
+    padding-left:10px;
+}
+
+
+
+#step2_animation {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#mSlices2 {
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+.finishBut {
+    width:150px;
+    height:50px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-family:'Roboto', sans-serif;
+    font-size:1.3em;
+    cursor:pointer;
+    display:none;
+}
+
+.finishBut:hover {
+    color:#afafaf;
+}
+
+
+

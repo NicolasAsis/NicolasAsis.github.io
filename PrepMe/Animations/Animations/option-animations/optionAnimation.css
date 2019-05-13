@@ -1,0 +1,27 @@
+#cutOneB {
+    animation: slideFromLeft 500ms ease;
+    animation-fill-mode: forwards;
+   
+}
+
+#cutTwoB {
+    animation: slideFromLeft 500ms ease;
+    animation-delay:200ms;
+    animation-fill-mode: forwards;
+}
+
+#meatB {
+    animation: slideFromLeft 500ms ease;
+    animation-delay:300ms;
+    animation-fill-mode: forwards;
+}
+
+#cutOneB, #cutTwoB, #meatB  {
+    position: relative;
+}
+
+@keyframes slideFromLeft {
+    0% {left:-500px;}
+    50% {left:5px;}
+    100% {left:0px;}
+}
