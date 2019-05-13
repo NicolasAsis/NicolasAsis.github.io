@@ -156,7 +156,7 @@ var data = {
       {
           step:"Step 4",
           title:"Remove seeds",
-          animation:"../svgs/Pomegranate/Crack/Step4_pome.svg",
+          animation:"../svgs/Pomegranate/Crack/step4_pome.svg",
           desc:"Put the seeds onto a plate and it's your done!"
       }
       ],
@@ -261,13 +261,13 @@ var data = {
           animation:"../svgs/Kiwi/wedge/step3_kiwiWedge.svg",
           desc:"Slice each half again to form little kiwifruit wedges, perfect for fruit salads or on an arranged fruit plate."
         },
-        {   
+        {
           step:"Step 4",
           title:"Slice kiwi in quarters",
           animation:"../svgs/Kiwi/wedge/step4_kiwiWedge.svg",
           desc:"Slice both kiwi halves in half, making quarters."
         },
-        {   
+        {
           step:"Step 5",
           title:"Enjoy",
           animation:"../svgs/Kiwi/wedge/step5_kiwiWedge.svg",
@@ -305,25 +305,25 @@ var data = {
         step:"Step 1",
         title:"Cut off the ends",
         animation:"../svgs/Watermelon/Slice/step1_waterMelSlice.svg",
-        desc:"Lay the watermelon on a cutting board and cut off both ends with a sharp knife."   
+        desc:"Lay the watermelon on a cutting board and cut off both ends with a sharp knife."
         },
         {
         step:"Step 2",
         title:"Cut watermelon in quarters",
         animation:"../svgs/Watermelon/Slice/step2_waterMelSlice.svg",
-        desc:"Carefully cut your watermelon in half. Then place each piece of watermelon down and cut each in half again."   
+        desc:"Carefully cut your watermelon in half. Then place each piece of watermelon down and cut each in half again."
         },
         {
         step:"Step 3",
         title:"Remove the melon from its rind",
         animation:"../svgs/Watermelon/Slice/step3_waterMelSlice.svg",
-        desc:"Hold the section in one hand while you slowly cut the flesh away from the rind, but leave the edge of watermelon."   
+        desc:"Hold the section in one hand while you slowly cut the flesh away from the rind, but leave the edge of watermelon."
         },
          {
         step:"Step 4",
         title:"Make watermelon slices",
         animation:"../svgs/Watermelon/Slice/step4_waterMelSlice.svg",
-        desc:"You’ll want to cut even slices through the fruit, about 2-3 inches wide across the melon, just down to the rind. Do not cut through the rind."   
+        desc:"You’ll want to cut even slices through the fruit, about 2-3 inches wide across the melon, just down to the rind. Do not cut through the rind."
         },
         {
         step:"Step 5",
@@ -337,31 +337,31 @@ var data = {
         step:"Step 1",
         title:"Cut off the ends",
         animation:"../svgs/Watermelon/Cube/step1_waterMelSlice.svg",
-        desc:"Lay the watermelon on a cutting board and cut off both ends with a sharp knife."   
+        desc:"Lay the watermelon on a cutting board and cut off both ends with a sharp knife."
         },
         {
         step:"Step 2",
         title:"Cut watermelon in quarters",
         animation:"../svgs/Watermelon/Cube/step2_waterMelCube.svg",
-        desc:"Carefully cut your watermelon in half. Then place each piece of watermelon down and cut each in half again."   
+        desc:"Carefully cut your watermelon in half. Then place each piece of watermelon down and cut each in half again."
         },
          {
         step:"Step 3",
         title:"Remove the melon from its rind",
         animation:"../svgs/Watermelon/Cube/step3_waterMelCube.svg",
-        desc:"Hold the section in one hand while you slowly cut the flesh away from the rind, but leave the edge of watermelon."   
+        desc:"Hold the section in one hand while you slowly cut the flesh away from the rind, but leave the edge of watermelon."
         },
         {
         step:"Step 4",
         title:"Slice watermelon into wedges",
         animation:"../svgs/Watermelon/Cube/step4_waterMelCube.svg",
-        desc:"You’ll want to cut even slices through the fruit, about 2-3 inches wide across the melon, just down to the rind. Do not cut through the rind."   
+        desc:"You’ll want to cut even slices through the fruit, about 2-3 inches wide across the melon, just down to the rind. Do not cut through the rind."
         },
         {
         step:"Step 5",
         title:"Cut a horizontal slice into the melon",
         animation:"../svgs/Watermelon/Cube/step5_waterMelCube.svg",
-        desc:"Start on the side of the watermelon, about 1 inches below the peak. Make a horizontal slice into the melon, cutting down so that the tip of the knife runs along the rind."   
+        desc:"Start on the side of the watermelon, about 1 inches below the peak. Make a horizontal slice into the melon, cutting down so that the tip of the knife runs along the rind."
         },
         {
         step:"Step 6",
