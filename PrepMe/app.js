@@ -53,6 +53,7 @@ var prox = new Proxy(pkg, handler);
 function ChangeFruit(text){
     pkg.fruit = text;
     pkg.page = 2;
+    curStep = 0;
     localStorage.setItem("pkg", JSON.stringify(pkg));
     //something.style.left = "-100vw";
    // setTimeout(function(){
