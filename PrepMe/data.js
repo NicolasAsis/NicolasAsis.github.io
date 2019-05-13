@@ -59,7 +59,7 @@ var data = {
         {
           step:"Step 6",
           title:"Put mango on plate",
-          animation:"",
+          animation:"../svgs/Mango/Cube/MangoCubeStep4 Anim.svg",
           desc:"After you cut the slices out of the mango, you can now place it onto the plate and enjoy."
       },
 
