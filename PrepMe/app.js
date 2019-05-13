@@ -30,8 +30,8 @@ var stepText = document.querySelector("#stepText"),
     circleDiv = document.querySelector("#tutCircleDiv"),
     tutSvg = document.querySelector("#tutSvg");
 
-var leftBut = document.querySelector("#leftBut"),
-    rightBut = document.querySelector("#rightBut"),
+var leftBut = document.querySelector("#leftBut");
+    rightBut = document.querySelector("#rightBut");
     finishBut = document.querySelector(".finishBut");
 
 var Page = document.querySelector(".pageS"),
@@ -212,7 +212,7 @@ if(pkg.page == 3){
 }
 
 if(pkg.page == 4){
-        console.log(data[pkg.fruit+pkg.cutType][pkg.curStep].step);
+
         stepText.innerText = data[pkg.fruit+pkg.cutType][pkg.curStep].step;
         titleText.innerText = data[pkg.fruit+pkg.cutType][pkg.curStep].title;
         tutSvg.src = data[pkg.fruit+pkg.cutType][pkg.curStep].animation;
