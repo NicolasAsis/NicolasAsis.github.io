@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicolas Asis - Graphic Design</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/portfolio.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        <script>
+    // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBkhg-eX82NhGRByqDgUXOJGFfykGYYYsI",
+                authDomain: "portfolio-9e4f2.firebaseapp.com",
+                databaseURL: "https://portfolio-9e4f2.firebaseio.com",
+                projectId: "portfolio-9e4f2",
+                storageBucket: "portfolio-9e4f2.appspot.com",
+                messagingSenderId: "353211369813",
+                appId: "1:353211369813:web:622d549c15c4eb75"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            
+             <nav>
+                <a href="GDpage.html">Graphic Design</a>
+                <a href="WDpage.html">Web Development</a>
+                <div id="logoDiv">
+                    <img src="svgs/PortfolioLogo.svg" alt="Nico Logo" class="Logo" onclick="GoHome()" />
+                </div>
+                <a href="AMpage.html">About Me</a>
+                <a href="CMpage.html">Contact Me</a>
+            </nav>
+            
+            <section class="headerSec">
+                <h3><b>Contact Me</b></h3>
+            </section>
+            
+            <section class="cmContent">
+                <h2>Contact Me Form</h2>
+                <form method="post" action="#" id="cmForm">
+                    Name<br>
+                    <input type="text" name="cmName" id="cmName" placeholder="Name"><br>
+                    Email<br>
+                    <input type="text" name="cmEmail" id="cmEmail" placeholder="Email"><br>
+                    Message<br>
+                    <textarea id="cmMessage" placeholder="Type Something"></textarea><br>
+                    
+                    <button type="button" id="cmSendBut" onclick="addData()">Send</button>
+                </form>
+            </section>
+            
+             <footer class="mainFooter" id="cmFooter">
+                <p>© Nicolas Asis Portfolio 2019 |</p>
+                <a href="https://ca.linkedin.com/in/nicolas-asis-b09707180" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                
+                <i class="far fa-envelope"></i>
+                
+                <a href="https://github.com/NicolasAsis" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </footer>
+            
+        </div>
+        
+        <script src="js/portfolio.js"></script>
+        <script>
+            var contactForm = document.querySelector("#cmForm");
+            var db = firebase.firestore();
+            
+            function addData(){ 
+                alert("Thank you for the message!");
+                
+                var name = document.getElementById("cmName").value;
+                var email = document.getElementById("cmEmail").value;
+                var message = document.getElementById("cmMessage").value;
+                
+                db.collection("contact").add({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+                .then(function(docRef){
+                    console.log("Document written with ID: ", docRef.id);
+                    //update the products view
+                    getProducts();
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+            }
+        </script>
+    </body>
+</html>
